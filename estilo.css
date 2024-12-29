@@ -1,0 +1,103 @@
+
+body {
+    background-color: white;
+    color: rgb(15, 20, 25);
+    
+}
+
+#navegacao a , #publicacoes a{
+    color: rgb(15, 20, 25);
+    text-decoration: none;
+    padding: 5px;
+   
+
+}
+
+#navegacao a:hover, #publicacoes a:hover{
+    background-color: rgba(15, 25, 20, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+  
+}
+
+nav ul li, #perfil ul li{
+
+    list-style :none;
+}
+
+ #estatisticas a span{
+    color: rgb(15, 20, 25);
+    font-weight: bold;
+ }
+
+#estatisticas a {
+    color: rgb(83, 100, 113);
+    text-decoration: none;
+    padding: 5px;
+}
+
+#estatisticas a:hover {
+    text-decoration: underline;
+}
+
+
+#acoes a{
+    color:rgb(83, 100, 113);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#acoes a.reply:hover {
+    color: rgba(29, 155, 240, 1);
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+#acoes a.retzeet:hover {
+    color: rgba(0, 186, 124, 1);
+    background-color: rgba(0, 186, 124, 0.1);
+}
+
+#acoes a.like:hover {
+    color: rgba(249, 24, 128, 1);
+    background-color: rgba(249, 24, 128, 0.1);
+}
+
+#acoes a.share:hover {
+    color: rgba(29, 155, 240, 1);
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+h4, .usuario {
+    color:  rgb(15, 20, 25);
+}
+
+h5{
+    color:rgb(83, 100, 113);
+}
+
+#informacoes a{
+    color:rgb(83, 100, 113);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.biografia  {
+    color:rgb(15, 20, 25);
+}
+
+.arroba, .data{
+    color:rgb(83, 100, 113);
+
+}
+
+.conteudo{
+    color:rgb(15, 20, 25);
+}
+
+.tzeet:hover{
+background-color: rgba(0, 0, 0, 0.03);
+}
+
