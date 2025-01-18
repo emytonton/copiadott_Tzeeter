@@ -3,102 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil no Twitter</title>
+    <title>Tzeet</title>
     <link rel="stylesheet" href="estilo.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <ul id="navegacao">
-                <li><a href = "#">Home</a></li>
-                <li><a href = "#"> Explore</a></li>
-                <li><a href = "#"> Notifications</a></li>
-                <li><a href = "#">Messages</a></li>
-                <li><a href = "#">BookMarks</a></li>
-                <li><a href = "#">Lists</a></li>
-                <li><a href = "#">Profile</a></li>
-                <li><a href = "#">More</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="perfil">
-
-        <img src = "https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" style="width:64px; height:64px; border-radius:50%;" />
-        <h4> Emilly Paiva Belo </h4>
-        <h5>@emy123</h5>
-        <p class="biografia"> Apenas uma estudante de ES (isso diz muito!)</p>
-        <button type = "button" id = "editar">Editar perfil</button>
-
-        <p id="informacoes">
-            <a href = "#">Quixadá  </a>
-            <a href = "#">   Joined June 2022</a>
-        </p>
-
+    <div id="layout">
+        
+        <aside id="navegacao">
+            <nav>
+                <ul>
+                    <li> <img src="C:\Users\emill\Downloads\tiziu.png"</li>
+                    <li><a href="#"><i class="bi bi-house-fill"></i><span>Home</span> </a></li>
+                    <li><a href="#"><i class="bi bi-search-heart-fill"></i> <span>Explore</span></a></li>
+                    <li><a href="#"><i class="bi bi-bell-fill"></i> <span>Notifications</span></a></li>
+                    <li><a href="#"><i class="bi bi-chat-right-fill"></i> <span>Messages</span></a></li>
+                    <li><a href="#"><i class="bi bi-person-fill"></i> <span>Profile</span></a></li>
+                    <li><a href="#"><i class="bi bi-three-dots"></i> <span>More</span></a></li>
+                </ul>
+                <button id="tweet-button"><span><i class="bi bi-pen-fill"></i></span>Tweet</button>
+            </nav>
+        </aside>
 
         
-        <p id = "estatisticas">
-            <a href = "#"><span>65</span> following </a>
-             <a href = "#"><span>40</span> followers</a>
-        </p>
+        <section id="conteudo">
+            <section id="perfil">
+                <img src="https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" 
+                     alt="Foto do perfil" style="width: 70px;; height:70px; border-radius:50%;">
+                <h4>Emilly Paiva Belo</h4>
+                <h5>@emy123</h5>
+                <div class="bio-e-botao">
+                <p class="biografia">Apenas uma estudante de ES (isso diz muito!)</p>
+                <button type="button" id="editar">Editar perfil</button>
+                </div>
+                <p id="informacoes">
+                    <a href="#"><i class="bi bi-geo-alt-fill"></i> Quixadá</a>
+                    <a href="#"><i class="bi bi-calendar-event-fill"></i> Joined June 2022</a>
+                </p>
+                <p id="estatisticas">
+                    <a href="#"><span>65</span> following</a>
+                    <a href="#"><span>40</span> followers</a>
+                </p>
+            </section>
 
+            <section id="publicacoes">
+                <p class="navegacao-links">
+                    <a  href="#">Tzeets</a>
+                    <a  href="#">Tzeets & replies</a>
+                    <a  href="#">Media</a>
+                    <a  href="#">Links</a>
+                </p>
+
+                <article class="tzeet">
+                    <img src="https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" 
+                         alt="Foto do usuário" style="width:50px; height:50px; border-radius:50%;">
+                    <p class="usuario">Emilly Paiva <span class="arroba">@emy123</span> <span class="data">21 jun 2021</span></p>
+                    <p class="conteudo">Muito calor nessa cidade!</p>
+                    <p id="acoes">
+                        <a href="#" class="reply"><i class="bi bi-chat-left-fill"></i> Reply</a>
+                        <a href="#" class="retzeet"><i class="bi bi-arrow-repeat"></i> Retzeet</a>
+                        <a href="#" class="like"><i class="bi bi-suit-heart"></i> Like</a>
+                        <a href="#" class="share"><i class="bi bi-box-arrow-in-up"></i> Share</a>
+                    </p>
+                </article>
+
+
+                <article class="tzeet">
+                    <img src="https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" 
+                         alt="Foto do usuário" style="width:50px; height:50px; border-radius:50%;">
+                    <p class="usuario">Emilly Paiva <span class="arroba">@emy123</span> <span class="data">21 jun 2021</span></p>
+                    <p class="conteudo">Essa comida do RU melhorou muito nos últimos dias! essa nova empressa é ótima.</p>
+                    <p id="acoes">
+                        <a href="#" class="reply"><i class="bi bi-chat-left-fill"></i> Reply</a>
+                        <a href="#" class="retzeet"><i class="bi bi-arrow-repeat"></i> Retzee</a>
+                        <a href="#" class="like"><i class="bi bi-suit-heart"></i> Like</a>
+                        <a href="#" class="share"><i class="bi bi-box-arrow-in-up"></i> Share</a>
+                    </p>
+                </article>
+
+            </section>
         </section>
 
-
-        
-        <section id = "publicacoes">
-
-        <p id="publicacoes">
-            <a href="#">Tzeets</a>
-            <a href="#">Tzeets & replies</a>
-            <a href="#">Media</a>
-            <a href="#">Links</a>
-
-        </p>
-
-        </section>
-
-
-
-        <section class="tzeet">
-            <article> 
-                <img src="https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" alt="Foto do usuário" style="width:50px; height:50px; border-radius:50%;">
-                <p class="usuario">Emilly Paiva  <span class="arroba">@emy123</span>  <span class = "data">21 jun 2021 </span></p>
-                <p class="conteudo">Muito calor nessa cidade!</p>
-
-
-                        <p id="acoes">
-                            <a href="#" class="reply">Reply</a>
-                            <a href="#" class="retzeet">Retzeet</a>
-                            <a href="#" class="like">Like</a>
-                            <a href="#" class="share">Share</a>
-                        </p>
-
-            </article>
-        </section>
-
-        <section class="tzeet">
-            <article> 
-                <img src="https://static.wikia.nocookie.net/naruto/images/b/b1/Hinata-Genin.png/revision/latest?cb=20140328224439&path-prefix=pt-br" alt="Foto do usuário" style="width:50px; height:50px; border-radius:50%;">
-                <p class="usuario">Emilly Paiva  <span class="arroba">@emy123</span>  <span class = "data">21 jun 2021 </span></p>
-                <p class="conteudo">Essa comida do RU melhorou muito nos últimos dias! essa nova empressa é ótima.</p>
-
-
-                        <p id="acoes">
-                            <a href="#" class="reply">Reply</a>
-                            <a href="#" class="retzeet">Retzeet</a>
-                            <a href="#" class="like">Like</a>
-                            <a href="#" class="share">Share</a>
-                        </p>
-
-            </article>
-        </section>
-
-
-    </main>
+     
+        <aside id="buscar">
+            <form id="form-busca">
+                <input type="text" placeholder="Buscar no Tzeet" style="width: 100%; padding: 8px; border-radius: 20px; border: none; background-color: rgb(239, 243, 244);">
+            </form>
+            <div id="sugestoes">
+                <h4>Talvez você curta</h4>
+                <div class="sugestao">
+                    <img src="https://i.pinimg.com/236x/bf/cf/ea/bfcfea2175a8efd59d8a242eb3c6fd57.jpg" alt="Carlos">
+                    <a href="#">Carlos</a>
+                    <button class="curtirseguir" >Seguir</button>
+                </div>
+                <div class="sugestao">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCLdUQ24NbIt64_RExV4s2afPsyl3OdXu2Q&s" alt="Maria">
+                    <a href="#">Maria</a>
+                    <button class="curtirseguir" >Seguir</button>
+                </div>
+                <div class="sugestao">
+                    <img src="https://pm1.aminoapps.com/7846/c29aa598cbbc46b4ffbd23e447046fb6ee195b70r1-300-300v2_00.jpg" alt="Ana">
+                    <a href="#">Ana</a>
+                    <button class="curtirseguir" >Seguir</button>
+                </div>
+                <a href="#" style="display: block; text-align: center; margin-top: 10px; color: #1DA1F2;">Mostrar mais</a>
+            </div>
+        </aside>
+    </div>
 </body>
-</html>
+</html>  
