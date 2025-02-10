@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Criar Conta</title>
+</head>
+<body>
+    <div class="form-container">
+        <span class="close-btn" onclick="window.location.href='../login/index.html'">X</span>
+        <h2>Criar Conta</h2>
+        <form id="signupForm" onsubmit="return validateForm(event)">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+
+            <label for="confirmPassword">Confirmação de Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" required>
+
+            <label for="birthMonth">Data de Nascimento:</label>
+            <div>
+                <select id="birthMonth" name="birthMonth" onchange="updateDays()">
+                    <option value="">Selecione o Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+
+                <select id="birthDay" name="birthDay">
+                    <option value="">Selecione o Dia</option>
+                </select>
+
+                <select id="birthYear" name="birthYear">
+                    <option value="">Selecione o Ano</option>
+                </select>
+            </div>
+
+            <label>
+                <input type="checkbox" id="receiveEmails"> Receba e-mails sobre sua atividade e recomendações.
+            </label>
+
+            <label>
+                <input type="radio" name="terms" value="agree" id="terms" required> Concordo com os Termos, Política de Privacidade e Uso de Cookies.
+            </label>
+            <label>
+                <input type="radio" name="terms" value="disagree"> Não concordo.
+            </label>
+
+            <button type="submit" id="submitBtn" disabled>Inscrever-se</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
